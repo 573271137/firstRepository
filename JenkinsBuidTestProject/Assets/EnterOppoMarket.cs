@@ -12,7 +12,7 @@ public class EnterOppoMarket : MonoBehaviour
 
         string time = DateTime.Now.ToString("yyyy-MM-dd/hh:mm:ss");
         string dir = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-        string apkName = string.Format(dir + "\\" + Application.productName + "{0}.apk", "");
+        string apkName = string.Format(Application.productName + "{0}.apk", "");
 
         Debug.Log(apkName);
         return;
