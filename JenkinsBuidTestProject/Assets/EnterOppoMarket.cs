@@ -2,11 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+using System;
+
 public class EnterOppoMarket : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
+
+        string time = DateTime.Now.ToString("yyyy-MM-dd/hh:mm:ss");
+        string dir = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+        string apkName = string.Format(dir + "\\" + Application.productName + "{0}.apk", "");
+
+        Debug.Log(apkName);
+        return;
+
         string marketPkg = "com.xiaomi.market";
         string appPkg = "com.newstudios.fallinlove";
 
