@@ -35,7 +35,7 @@ public static class BuildTool
 
         string time = DateTime.Now.ToString("yyyy-MM-dd/hh:mm:ss");
         string dir = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
-        string apkName = string.Format("E:\\ApkOutPath\\" + "{0}.apk", "");
+        string apkName = string.Format(dir + "\\" + Application.productName + ".apk");
 
         Debug.Log(apkName);
 
